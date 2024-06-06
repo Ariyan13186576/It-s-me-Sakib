@@ -837,6 +837,24 @@ input[type=number]::-webkit-outer-spin-button {
             width: 83%;
         }
 
+        .contact-1{
+            height: 300px;
+        }
+
+
+        .all img{
+            width: 500px;
+        }
+
+        .contact-1{
+            height: auto;
+        }
+
+        .row-0{
+            display: flex;
+            flex-direction: column;
+        }
+
     }
 
 
