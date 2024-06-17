@@ -17,16 +17,21 @@ body{
 
 .div-3{
     display:flex;
+    flex-direction: row;
     width: 100%;
     flex-direction: row;
     background-color: rgb(0, 0, 0);
     height: 40px;
-    justify-content: space-around;
+    justify-content:flex-end;
     margin: 0;
     padding: 0;
     overflow: hidden;
     z-index: 1000;
     top: 0;
+}
+
+.div-3 a{
+    margin:0px 40px 0px 40px;
 }
 
 .div-3 .icon{
@@ -60,9 +65,11 @@ body{
                                 /* body design by me */
 
 .all{
-    background-color:#2BFF00;
+    background-image:url(tttttt.gif);
+    background-size:auto;
+    background-position: center;
     width: 100%;
-    height: 220px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,21 +77,29 @@ body{
 }
 
 .all img{
-    height: 180px;
-    width: 180px;
+    height: 270px;
+    width:600px;
+    text-align: center;
+    margin-top: 15px;
 }
    
-.pic-1,
-.pic-2,
-.pic-3{
-    border-radius: 50%;
-    border: 2px solid white;
+.pic-2{
+    border-radius: 10px;
+    border: 1px solid rgb(248, 255, 39);
 }
 
-.pic-1:hover,
-.pic-2:hover,
-.pic-3:hover{
-transform:rotate(20deg);}
+.ll p{
+    font-size: 40px;
+    text-align: center;
+    font-family: Monotype Corsiva,Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* .pic-2:hover{
+transform:rotate(20deg);
+} */
 
 .alll{
     width: 100%;
@@ -99,8 +114,11 @@ transform:rotate(20deg);}
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-    color: white;
+    background-color: 
+    #000000;
+    color: #09ff00;
+    font-weight: bold;
+    border: .2px solid blue;
 }
 
 .right{
@@ -109,7 +127,10 @@ transform:rotate(20deg);}
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 225, 255);
+    background-color: rgb(0, 0, 0);
+    color: #09ff00;
+    border: .2px solid blue;
+
 }
 
 .too {
@@ -122,6 +143,22 @@ transform:rotate(20deg);}
     background-size: cover;
     background-position: center;
     height: 300px;
+}
+
+.service{
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.service p{
+    background-color: black;
+    color: #2BFF00;
+    font-size: 45px;
+    text-align: center;
+    font-family: Monotype Corsiva,Arial, Helvetica, sans-serif ;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .bb {
@@ -174,10 +211,16 @@ transform:rotate(20deg);}
     
 }
 
-.container-1,
-.container-2,
-.container-3{
-    background-color: rgb(123, 255, 0);
+.intro{
+    text-align: center;
+    font-size: 45px;
+    color: #09ff00;
+    font-family: Monotype Corsiva,Arial, Helvetica, sans-serif ;
+    font-weight:bold;
+}
+
+.container-1{
+    background-image: radial-gradient(#ff00ee,rgb(0, 225, 255),#2BFF00);
     border: 2px solid rgb(255, 0, 0);
     border-radius: 15px;
     display: flex;
@@ -242,9 +285,9 @@ transform:rotate(20deg);}
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: 
-    #373174;
+    background: linear-gradient(to right,blue,#09ff00, #ff00ee, #9d00ff,blue);
     height: 350px;
+    padding: 10px;
 }
 
 .wide{
@@ -382,6 +425,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+
+
+
 @media only screen and (min-width: 2053px) and (max-width: 2560px){
     .div-1{
         display: flex;
@@ -399,13 +445,17 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .all{
-        height: 470px;
+        height: auto;
         width: 100%;
     }
 
     .all img{
         height: 400px;
-        width: 400px;
+        width: 100%;
+    }
+
+    .all p{
+        font-size: 80px;
     }
 
     .alll{
@@ -429,6 +479,16 @@ input[type=number]::-webkit-outer-spin-button {
     .bb p{
         font-size: 40px;
     }
+
+    .service{
+        background-color: black;
+    }
+
+    .service p{
+        font-size: 70px;
+        font-family: Monotype Corsiva,Arial, Helvetica, sans-serif ;    
+        background-color: black;
+    }
     
     .too{
         height: 550px;
@@ -436,6 +496,11 @@ input[type=number]::-webkit-outer-spin-button {
 
     .box-00{
         height: auto;
+    }
+
+    .intro{
+        font-size: 70px;
+        color: #2BFF00;
     }
 
     .container-2,
@@ -455,19 +520,19 @@ input[type=number]::-webkit-outer-spin-button {
     .container-2 h3,
     .container-3 h3,
     .container-1 h3{
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .container-2 h6,
     .container-3 h6,
     .container-1 h6{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .container-2 p,
     .container-3 p,
     .container-1 p{
-        font-size: 80px;
+        font-size: 100px;
     }
 
     .box-5 i,
@@ -477,11 +542,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .contact-1{
-        height: 40px;
+        height: auto;
     }
 
     .wide{
-        font-size: 90px;
+        font-size: 70px;
     }
 
     .row-0{
@@ -564,14 +629,35 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
+
 @media only screen and (min-width: 1451px) and (max-width: 2052px){
     .too{
         height: 450px;
     }
 
+    .container-1{
+        height: 400px;
+        width: 95%;
+    }
+
+    .container-1 img{
+        height: 170px;
+        width: 170px;
+    }
+
+    .container-1 p{
+        font-size: 50px;
+    }
+
+    .container-1 h3{
+        font-size: 30px;
+    }
+
 
 
 }
+
+
 
 
 @media only screen and (min-width: 1301px) and (max-width: 1450px){
@@ -584,7 +670,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-/* Desktop-Mode */
+
+
 @media only screen and (min-width: 1025px) and (max-width: 1300px){
     .alll{
         width: 100%;
@@ -611,7 +698,8 @@ input[type=number]::-webkit-outer-spin-button {
 
   }
   
-  /* Tablet-L (768px) */
+
+
   @media only screen and (min-width: 767px) and (max-width: 1024px) {
         .div-3 a:not(:first-child) {
             display: none;
@@ -639,7 +727,7 @@ input[type=number]::-webkit-outer-spin-button {
     
         .icon i{
             color: red;
-            right: 5%;
+            margin-right: 30px;
         }
     
         .div-3.responsive a i{
@@ -657,16 +745,15 @@ input[type=number]::-webkit-outer-spin-button {
             flex-wrap: wrap;
         }
            
-        .pic-1,
-        .pic-2,
-        .pic-3{
+
+        .pic-2{
             
             margin: 20px;
         }
       
         .all img{
-            height:500px;
-            width:500px;
+            height:300px;
+            width:700px;
         }
     
         .left{
@@ -679,7 +766,7 @@ input[type=number]::-webkit-outer-spin-button {
     
         .too{
             display: grid;
-            height: 1400px;
+            height: 1100px;
             width: 100%;
         }
         
@@ -732,8 +819,8 @@ input[type=number]::-webkit-outer-spin-button {
         }
         
         .bb img{
-            width: 100%;
-            height: 400px;
+            width: 700px;
+            height: 300px;
             display: block;
         
         }
@@ -752,7 +839,7 @@ input[type=number]::-webkit-outer-spin-button {
         }
     
         .contact-1{
-            height: 480px;
+            height: 420px;
         }
     
         .row-0{
@@ -780,7 +867,7 @@ input[type=number]::-webkit-outer-spin-button {
         .div-3 a.icon {
             float: right;
             display: block;
-            color: #ffffff;
+            color: #ff0000;
             margin: 10px 0 0 0;
             right: 0;
         }
@@ -801,12 +888,16 @@ input[type=number]::-webkit-outer-spin-button {
         }
     
         .icon i {
-            color: red;
+            color: rgb(255, 255, 255);
+            margin-right: 30px;
         }
+
     
         .div-3.responsive a i {
-            margin-right: 10px;
+            margin-right: 30px;
         }
+
+       
 
         .too{
             height: 1050px;
@@ -817,9 +908,10 @@ input[type=number]::-webkit-outer-spin-button {
         }
 
         .too img{
-            height: 300px;
-            width: 100%;
+            height: 280px;
+            width: 500px;
         }
+
 
         .too img:hover{
             transform: translateY(28px);
@@ -837,13 +929,30 @@ input[type=number]::-webkit-outer-spin-button {
             width: 83%;
         }
 
+        .contact-1{
+            height: 300px;
+        }
+
+
+        .all img{
+            width: 500px;
+        }
+
+        .contact-1{
+            height: auto;
+        }
+
+        .row-0{
+            display: flex;
+            flex-direction: column;
+        }
+
     }
 
 
 
 
     
-  /*Laptop-S (425px) */
   @media only screen and (min-width: 425px) and (max-width: 594px) {
     .div-3 a:not(:first-child) {
         display: none;
@@ -1134,7 +1243,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 
   
-  /* Mobile-S (320px) */
   @media only screen and (max-width: 374px) {
     .div-3 a:not(:first-child) {
         display: none;
@@ -1171,9 +1279,6 @@ input[type=number]::-webkit-outer-spin-button {
         margin-right: 10px;
     }
 
-    .div-1{
-
-    }
 
     .div-1 img{
         width: 80px;
